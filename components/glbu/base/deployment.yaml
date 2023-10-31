@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: glbu
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-iljf-tenant/byoc-app-drcg/glbu@sha256:132e9d040de4e5b829cf283026f880982bacf50119bf94c80825c6bbb35e44ae
         name: my-java-quarkus
         ports:
         - containerPort: 8081
