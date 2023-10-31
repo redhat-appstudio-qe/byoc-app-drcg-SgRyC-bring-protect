@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: glbu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-iljf-tenant/byoc-app-drcg/glbu@sha256:132e9d040de4e5b829cf283026f880982bacf50119bf94c80825c6bbb35e44ae
+        name: my-java-quarkus
+        resources: {}
+status: {}
